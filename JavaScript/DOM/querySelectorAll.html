@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelectorAll Demo</title>
+
+    <style>
+        .box {
+            width: 250px;
+            padding: 10px;
+            margin: 8px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<h2>DOM querySelectorAll Example</h2>
+
+<div class="box">Box 1</div>
+<div class="box">Box 2</div>
+<div class="box">Box 3</div>
+
+<button onclick="changeBoxes()">Change All Boxes</button>
+
+<script>
+function changeBoxes() {
+
+    const boxes = document.querySelectorAll(".box");
+
+    boxes.forEach(function(box, index) {
+        box.style.backgroundColor = "lightblue";
+        box.textContent = "Updated Box " + (index + 1);
+    });
+}
+</script>
+
+</body>
+</html>

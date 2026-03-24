@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>querySelector Demo</title>
+
+    <style>
+        .highlight {
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="mainTitle">DOM querySelector Example</h1>
+
+<p class="highlight">This is the first paragraph.</p>
+<p class="highlight">This is the second paragraph.</p>
+<p>This is a normal paragraph.</p>
+
+<button onclick="changeContent()">Click Me</button>
+
+<script>
+function changeContent() {
+
+    // Select by ID
+    const title = document.querySelector("#mainTitle");
+    title.style.color = "green";
+
+    // Select first element with class
+    const firstPara = document.querySelector(".highlight");
+    firstPara.textContent = "Changed using querySelector()";
+
+    // Select first <p> tag
+    const firstPTag = document.querySelector("p");
+    firstPTag.style.backgroundColor = "yellow";
+}
+</script>
+
+</body>
+</html>
