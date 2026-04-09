@@ -199,7 +199,7 @@ Password: 1234
 ##  Author
 
 **Khushbu Singh**
-B.Tech – Artificial Intelligence & Machine Learning
+B.Tech – Computer Science and Engineering
 
 ---
 
