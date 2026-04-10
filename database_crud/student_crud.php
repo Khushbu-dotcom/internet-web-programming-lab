@@ -2,7 +2,7 @@
 // -----------------------------
 // DATABASE CONNECTION
 // -----------------------------
-$conn = new mysqli("localhost", "root", "WJ28@krhps", "college");
+$conn = new mysqli("localhost", "root", "YOUR_PASSWORD", "college");
 
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
